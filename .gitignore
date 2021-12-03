@@ -1,0 +1,39 @@
+
+services/neo4j/data
+services/neo4j/imports
+services/neo4j/logs
+services/neo4j/plugins
+
+# Environments
+# ** Do not ignore .env files!
+.env/
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+### Secret environment variables
+*.secret
+*.secrets
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
+!.vscode/*.code-snippets
+

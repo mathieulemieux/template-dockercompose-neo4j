@@ -1,0 +1,6 @@
+version: ${COMPOSE_API_VERSION}
+services:
+  neo4j:
+    build: ./services/neo4j
+    image: ${REGISTRY}/${APP_NAME}:${NEO4J_IMG_TAG}
+    container_name: "${APP_NAME}_neo4j"

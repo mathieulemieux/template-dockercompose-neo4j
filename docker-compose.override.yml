@@ -1,0 +1,13 @@
+services:
+  neo4j:
+    # command: [""]
+    ports:
+      - "${NEO4J_HTML_PORT}:7474"
+      - "${NEO4J_BOLT_PORT}:7687"
+    volumes:
+      - ${NEO4J_DATA_VOLUME}:/data
+      - ${NEO4J_LOGS_VOLUME}:/logs
+      - ${NEO4J_IMPORTS_VOLUME}:/imports
+      - ${NEO4J_PLUGINS_VOLUME}:/plugins
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH}
